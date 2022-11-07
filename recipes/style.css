@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Cabin&display=swap%27');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Amatic SC','San-serif';
+    font-family: 'Montserrat', sans-serif;
+    font-weight:lighter;
 }
 
 h1{
     text-align: center;
-    font-size: 60px;
+    font-family: 'Zen Antique Soft', serif;
+    font-size: 40px;
 }
 
 .logo{
@@ -29,14 +31,98 @@ h1{
 }
 
 figure{
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: lighter;
     text-align: center;
     text-decoration: none;
     } 
 
-li:hover{
+.hover_links:hover{
     transition: 0.8s;
     border-radius: 10px;
     box-shadow: 0px -5px 10px 0px rgba(0, 0, 0, 0.5); 
 }/*transition for hovering on food*/
+
+.heading h1{
+    font-size: 20px;
+}
+
+.all{
+padding: 20px;
+display: grid;
+grid-template-columns: 0.5fr 3.5fr;
+grid-row-gap: 20px;
+grid-column-gap: 30px;
+}
+
+.side-image{
+    flex: 1;
+    order: 1; 
+}
+
+.side-image img{
+    border-radius: 10px;
+    width: 350px;
+    height: 450px;
+}
+
+.desc_container{
+    border: 1px solid black;
+    border-radius: 5px;
+    flex: 1;
+    order: 2;
+    padding: 15px;
+}
+
+.desc_container a{
+    padding-left: 10px;
+    text-decoration: none;
+}
+h2{
+    font-family: 'Zen Antique Soft', serif;
+}
+h2,p{
+    padding: 10px;
+}
+
+.ingr_container{
+    padding-top: 10px;
+    border-radius: 5px;
+    background-color: rgb(240, 236, 230);
+    flex: 1;
+    order: 3;
+    list-style: none;
+    border-bottom: 20px;
+    padding-left: 7%;
+}
+.ingr_container ul{
+    padding-left: 3%; 
+    padding-bottom: 20%;
+}
+
+.ingr_container li{
+    list-style: none;
+}
+
+.steps_container{
+ 
+    border: 1px solid black;
+    border-radius: 5px;
+    flex: 1;
+    order: 4;
+    list-style: decimal;
+}
+.steps_container .ordered_list{
+    padding-left: 6%;
+    padding-top: 0%;
+    padding-bottom: 4%;
+}
+
+.steps_container li{
+    list-style: decimal;
+}
+
+.unordered_list li{
+    list-style-type: none;
+    padding-left: 2%;
+}
